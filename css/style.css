@@ -1,0 +1,17 @@
+html {
+	background: url(../images/AmArFlags.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#name {
+	color: white;
+    font-family: 'Walter Turncoat';
+    position: fixed;
+    top: 15%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    font-size: 75;
+}
