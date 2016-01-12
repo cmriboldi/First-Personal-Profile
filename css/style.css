@@ -1,17 +1,29 @@
-html {
-	background: url(../images/AmArFlags.png) no-repeat center center fixed;
+body {
+	background: url(../img/background/AmArFlags.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	min-height: 100%
 }
 
 #name {
 	color: white;
     font-family: 'Walter Turncoat';
     position: fixed;
-    top: 15%;
-    left: 46%;
+    top: 20%;
+    left: 46.4%;
     transform: translate(-50%, -50%);
     font-size: 75;
+}
+
+#enter {
+	color: white;
+    font-family: 'Kreon';
+    position: fixed;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 43px;
+    opacity: .6;
 }
