@@ -1,0 +1,21 @@
+body {
+  background: url(../img/background/dark-textured-background9.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%
+}
+
+body .blurred {
+  background: rgba(0,0,0, 0.6);
+}
+
+body .content {
+  color: white;
+}
+
+.to-top {
+  -ms-align-items: right;
+  align-items: right;
+}

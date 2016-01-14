@@ -1,0 +1,23 @@
+.navbar {
+  margin-bottom: 0px;
+}
+
+.blurred {
+  height: 100%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(255,255,255, 0.4);
+  overflow: auto;
+  /*background-color: white;
+  opacity: .4;*/
+}
+
+.content {
+  color: black;
+  margin: 2em 3em 2em 3em;
+}
+
+.logo {
+  padding-top: 0;
+}

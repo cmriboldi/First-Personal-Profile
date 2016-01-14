@@ -1,0 +1,18 @@
+body {
+  overflow: hidden;
+  background: url(../img/background/dark-textured-background7.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%
+}
+
+.content {
+  overflow: hidden;
+}
+
+#canvas {
+  padding-left: 22%;
+  padding-right: 22%;
+}
