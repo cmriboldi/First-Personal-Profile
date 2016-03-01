@@ -29,6 +29,21 @@ img {
   margin-right: 22%;
 }
 
+#politics {
+  margin-left: 33%;
+  margin-right: 22%;
+}
+
+.photo {
+  width: 10em;
+  height: 13em;
+  border-radius: 70px;
+}
+
+.web-ref {
+  color: #000066;
+}
+
 .assignmentsText {
   color: black;
 }

@@ -13,7 +13,6 @@
       <div class='content'>
         <a class='assignmentsText' name='weather'><h2>Here is a simple working weather app, with a 5 day forcast.</h2></a>
         <form>
-          Enter you city: <input type="text" name="city"><br>
           Select your State: <select name="state">
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -66,77 +65,20 @@
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
                               </select><br>
-          <button onclick="getWeather()">Sumbit</button>
+        Enter Any City: <input type="text" id="cityfield" value=""><br>
+        Suggestion: <span id="txtHint">Empty</span>
+        <input id="button" type="submit" value="Submit">
         </form>
-        <div id="weather"></div>
-        <a class='assignmentsText' name='pre-tag'><h2>Here is an Example of a Pre tag</h2></a>
-        <pre>
-                                                              ___
-                                                          ,--'___`--,            
-                                                        ,'   / _ \   `,          
-                                                       /   _/ / \ \_   \          
-                                                      '-,-'\ /   \ /`-,-`        
-                                              __.----==-|   |     |   |-==----.__
-                                              `---==|---|   |     |   |---|==---'
-                                                      .-`-,/|     |\,-'-.        
-                                                      |    \ `---' /    |        
-                                                      `   \ \     / /   '        
-                                                       |   \| --- |/   |          
-                                                       `    |     |    '          
-                                                        |   |     |   |          
-                                                         \  `.   ,'  /            
-                                                          \  |   |  /            
-                                                           \ |   | /              
-                                                            \`. .'/              
-                                                            -o|_|o-              
-                                                              (_)                
+        <p>City</p>
+        
+        <textarea id="dispcity">No City</textarea>
+        <p>Current Weather</p>
+        <div id="weather">No weather</div>
+        
+        <div id="politics">
           
-                                              ________________.  ___     .______  
-                                             /                | /   \    |   _  \
-                                            |   (-----|  |----`/  ^  \   |  |_)  |
-                                             \   \    |  |    /  /_\  \  |      /
-                                        .-----)   |   |  |   /  _____  \ |  |\  \-------.
-                                        |________/    |__|  /__/     \__\| _| `.________|
-                                         ____    __    ____  ___     .______    ________.
-                                         \   \  /  \  /   / /   \    |   _  \  /        |
-                                          \   \/    \/   / /  ^  \   |  |_)  ||   (-----`
-                                           \            / /  /_\  \  |      /  \   \
-                                            \    /\    / /  _____  \ |  |\  \---)   |
-                                             \__/  \__/ /__/     \__\|__| `._______/
-                                             
-
-                                                         |||      |||    
-                                                         | |  __  | |
-                                          |-|_____-----/   |_|  |_|   \-----_____|-|
-                                          |_|_________{   }|  (^) |{  }__________|_|  
-                                           ||          |_| |   ^  | |_|          ||  
-                                           |              \|  /\  |/              |  
-                                           |               \ |--| /               |    
-                                           =               \ |__| /               =    
-                                           +               \      /               +
-                                                            \    /    
-                                                            \    /    
-                                                             \  /
-                                                             \  /
-                                                             \  /
-                                                             \  /
-                                                             \  /    
-                                                             \  /
-                                                              \/
-        </pre>
-        <a class='assignmentsText' name='table'><h2>Here is an Example of a Flipping Tables Table</h2></a>
-        <table>
-          <tr>
-            <td><img src="../img/tableFlipping1.png"></td>
-            <td><img src="../img/tableFlipping2.png"></td>
-            <td><img src="../img/tableFlipping3.png"></td>
-          </tr>
-          <tr>
-            <td><img src="../img/tableFlipping4.png"></td>
-            <td><img src="../img/tableFlipping5.png"></td>
-            <td><img src="../img/tableFlipping6.png"></td>
-          </tr>
-        </table>
+        </div>
+        
       </div>
     </div>
   </body>
