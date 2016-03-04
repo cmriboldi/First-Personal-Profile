@@ -1,13 +1,23 @@
 $(document).ready(function() {
   
   $( "#cityfield" ).keyup(function() {
-    var url = "http://52.26.234.168:3000/getCity?q="+$("#cityfield").val();
-    url += ".json";
+    // var url = "http://52.26.234.168:3000/getCity?q="+$("#cityfield").val();
+    // 
+    // $.ajax({
+    //     type: "GET",
+    //     url: url,
+    //     dataType: "jsonp",
+    //     success: function (xml) {
+    //         console.log("xml is: ", xml);
+    //     },
+    //     error: function(error) {
+    //       console.log("error is: ", error);
+    //     }
+    // });
     
-    $.ajax({
-      url : url,
-      dataType : "jsonp",
-      success : function(data) {
+    var url = "https://students.cs.byu.edu/~clement/CS360/ajax/getcity.cgi?q="+$("#cityfield").val();
+    
+      $.getJSON(url,function(data) {
         var everything;
         everything = "<ul>";
         $.each(data, function(i,item) {
@@ -16,13 +26,11 @@ $(document).ready(function() {
           
         everything += "</ul>";
         $("#txtHint").html(everything);
-      },
-      error : function(jqXHR, textStatus, errorThrown) { 
-        console.log('getJSON request failed! ' + textStatus); 
-        console.log("incoming "+jqXHR.responseText);
-      }
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) { 
+      console.log('getJSON request failed! ' + textStatus); 
+      console.log("incoming "+jqXHR.responseText);
     });
-    
     $("#txtHint").text("Keyup "+$("#cityfield").val());
   });
   
