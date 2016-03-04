@@ -2,7 +2,12 @@ $(document).ready(function() {
   
   $( "#cityfield" ).keyup(function() {
     var url = "http://52.26.234.168:3000/getCity?q="+$("#cityfield").val();
-      $.getJSON(url,function(data) {
+    
+    
+    $.ajax({
+      url : url,
+      dataType : "jsonp",
+      success : function(data) {
         var everything;
         everything = "<ul>";
         $.each(data, function(i,item) {
@@ -11,11 +16,13 @@ $(document).ready(function() {
           
         everything += "</ul>";
         $("#txtHint").html(everything);
-    })
-    .fail(function(jqXHR, textStatus, errorThrown) { 
-      console.log('getJSON request failed! ' + textStatus); 
-      console.log("incoming "+jqXHR.responseText);
+      },
+      error : function(jqXHR, textStatus, errorThrown) { 
+        console.log('getJSON request failed! ' + textStatus); 
+        console.log("incoming "+jqXHR.responseText);
+      }
     });
+    
     $("#txtHint").text("Keyup "+$("#cityfield").val());
   });
   
