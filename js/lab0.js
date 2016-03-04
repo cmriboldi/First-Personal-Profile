@@ -2,7 +2,7 @@ $(document).ready(function() {
   
   $( "#cityfield" ).keyup(function() {
     var url = "http://52.26.234.168:3000/getCity?q="+$("#cityfield").val();
-    
+    url += ".json";
     
     $.ajax({
       url : url,
